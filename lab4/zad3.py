@@ -1,6 +1,6 @@
 import numpy as np
 
 def create_matrix(n):
-    return np.full((n, n), [i for i in range(1, n)])
+    return np.arange(1, n * n + 1, 1).reshape((n, n))
 
-print(create_matrix(3))
+print(create_matrix(5))
